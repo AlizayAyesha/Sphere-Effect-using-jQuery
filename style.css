@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #6ea7ba;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  h2 {
+    color: #031b2e;
+    font-size: 100px;
+    font-weight: 900;
+    text-transform: capitalize;
+    line-height: 1;
+    cursor: default;
+  }
+  
+  .circle {
+    width: 10px;
+    height: 10px;
+    background-color: #522d2d;
+    border-radius: 50%;
+    position: absolute;
+    mix-blend-mode: difference;
+    transition: all 0.1s ease-out;
+    pointer-events: none;
+    transform: scale(1); /* Initial scale */
+    z-index: -1;
+  }
+  
+  h2:hover + .circle {
+    transform: scale(70); /* Scale up on hover */
+  }
+  
